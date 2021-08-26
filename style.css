@@ -1,0 +1,89 @@
+/* @media all and (min-width: 768px)  { */
+ * {
+     margin: 0;
+     padding: 0;
+    }
+    
+  body {
+      background-color: #ffffff;
+    }
+   .header {
+        background-color: orange;
+        display: flex;
+        flex-direction: row;
+        
+    }
+    nav a{
+     text-decoration: none;   
+     color: #901C1C;
+    }     
+   
+
+
+nav a:hover{
+    color: #D3573C;
+
+}
+nav ul {
+    list-style-type: none;
+}
+
+  
+
+  .sous  {
+      /* background-color: olivedrab;    */
+      display: none;
+      box-shadow: 0px 1px 2px #CCC;
+      background-color: white;
+      position: absolute;
+      width: 100%;
+      z-index: 1000;     
+    }
+    nav > ul li:hover .sous{
+        display: block;
+    }
+    .sous li{
+        float: none; 
+        width: 100%;
+        text-align: left;
+    }
+    .sous a{
+        padding: 10px;
+        border-bottom: none;
+    }
+    .sous a:hover{
+        border-bottom: none;
+        background-color: RGBa(200,200,200,0.1);
+    }
+
+   h1 {
+        color: #901C1C;
+        font-weight: 400;
+        font-size: 2rem;
+        /* display: flex;
+        flex-direction: row;
+        align-items: flex-end; */
+    }
+    .name__photographe { 
+     color: #D3573C;   
+     font-weight: 400;
+     font-size: 2rem;
+
+    }
+    .name__photographe-country {
+        color: #901C1C; 
+        font-size: 1rem;
+    }
+    .slogan {
+        font-size: 0.8rem;
+        color: #000000;
+    }
+
+    span {
+        font-size: 0.7rem;
+    }
+    .tag-Photographe{
+        color: #901C1C;
+        font-size: 1rem;
+    }
+/* }  */
