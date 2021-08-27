@@ -12,8 +12,13 @@
         display: flex;
         flex-direction: row;
         width: 65%;
-        
+        /* height: 110px; */
     }
+    /* ul {
+    display: flex;
+    justify-content: center;
+    }*/
+
     nav a{
      text-decoration: none;   
      color: #901C1C;
@@ -21,7 +26,7 @@
    
 
 
-nav a:hover{
+    nav a:hover{
     color: #D3573C;
     
 
@@ -70,10 +75,23 @@ nav ul {
         flex-direction: row;
         align-items: flex-end; */
     }
+     figcaption {
+        /* background-color: #b46767; */
+        display: flex;
+        flex-direction: column;
+        /* align-content: center; */
+        text-align: center;
+        margin: 50px;
+    }
 
-     .photos-photographe1 {
+    .photos-photographe1 {
+      display: flex;
+
+    }
+    .photos-photographe2 {
         display: flex;
     }
+    
     .photo-presentation {
         border-radius: 50%;
     }
@@ -81,6 +99,7 @@ nav ul {
      color: #D3573C;   
      font-weight: 400;
      font-size: 2rem;
+    
 
     }
     .name__photographe-country {
@@ -90,6 +109,7 @@ nav ul {
     .slogan {
         font-size: 0.8rem;
         color: #000000;
+        padding: 3px;
     }
 
     span {
@@ -98,5 +118,16 @@ nav ul {
     .tag-Photographe{
         color: #901C1C;
         font-size: 1rem;
+    }
+
+    /* page profil */
+    .name-photographe-profile {
+        color: #D3573C;
+        font-weight: 400;
+        font-size: 3em;
+        position: absolute;
+        left: 10%;
+      
+
     }
 /* }  */
