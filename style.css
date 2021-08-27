@@ -11,6 +11,7 @@
         background-color: orange;
         display: flex;
         flex-direction: row;
+        width: 65%;
         
     }
     nav a{
@@ -22,6 +23,7 @@
 
 nav a:hover{
     color: #D3573C;
+    
 
 }
 nav ul {
@@ -60,9 +62,20 @@ nav ul {
         color: #901C1C;
         font-weight: 400;
         font-size: 2rem;
+        position: absolute;
+        right: 10%;
+        top: 5%;
+
         /* display: flex;
         flex-direction: row;
         align-items: flex-end; */
+    }
+
+     .photos-photographe1 {
+        display: flex;
+    }
+    .photo-presentation {
+        border-radius: 50%;
     }
     .name__photographe { 
      color: #D3573C;   
