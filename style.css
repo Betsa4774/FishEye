@@ -1,79 +1,77 @@
-/* @media all and (min-width: 768px)  { */
+@media all and (min-width: 768px)  {
  * {
      margin: 0;
      padding: 0;
+     box-sizing: border-box;
     }
     
   body {
       background-color: #ffffff;
-    }
-   .header {
-        background-color: orange;
+   }
+
+  .wrapper {      
+      background-color: #E67D5c;
+      position: absolute;
+      left: 500px;       
+      top: 10px;
+        /* display: flex;
+        justify-content: center;
+        color: 000000;  
+        padding-bottom: 15px;  */
+        /* background-image: url();  */              
+   }
+
+   .header {        
         display: flex;
         flex-direction: row;
-        width: 65%;
-        /* height: 110px; */
+        width: 75%;  
+        margin-top: 35px;     
     }
-    /* ul {
-    display: flex;
-    justify-content: center;
-    }*/
+    #logo-banner {       
+        margin: 20px 0px 0px 70px;      
+        /* color: #901C1C; si besoin */
+    }
+    .header-nav {               
+     width: 100%;
+     padding-top: 10px  ;
+     margin: 25px 50px 0px 10px; 
+     font-size: 1em;    
+
+    }
 
     nav a{
-     text-decoration: none;   
-     color: #901C1C;
+     text-decoration: none;  
+     color: #901C1C;  
+     /* padding-right: 7px;
+     margin-left: 5px; */
+     
     }     
-   
-
 
     nav a:hover{
-    color: #D3573C;
-    
+    color: #D3573C; 
+    }
 
-}
-nav ul {
+    nav ul {
     list-style-type: none;
-}
-
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   
-
-  .sous  {
-      /* background-color: olivedrab;    */
-      display: none;
-      box-shadow: 0px 1px 2px #CCC;
-      background-color: white;
-      position: absolute;
-      width: 100%;
-      z-index: 1000;     
+    /* flex-wrap: nowrap; */
     }
-    nav > ul li:hover .sous{
-        display: block;
+    
+    a.tag {
+       padding-left: 10px;
     }
-    .sous li{
-        float: none; 
-        width: 100%;
-        text-align: left;
-    }
-    .sous a{
-        padding: 10px;
-        border-bottom: none;
-    }
-    .sous a:hover{
-        border-bottom: none;
-        background-color: RGBa(200,200,200,0.1);
-    }
-
-   h1 {
+ 
+   .title {
         color: #901C1C;
         font-weight: 400;
         font-size: 2rem;
         position: absolute;
-        right: 10%;
-        top: 5%;
-
-        /* display: flex;
-        flex-direction: row;
-        align-items: flex-end; */
+        right: 3%;
+        top: 8%;
+         margin-right: 70px;
     }
      figcaption {
         /* background-color: #b46767; */
@@ -106,13 +104,13 @@ nav ul {
         color: #901C1C; 
         font-size: 1rem;
     }
-    .slogan {
+    .tagline__photographe {
         font-size: 0.8rem;
         color: #000000;
         padding: 3px;
     }
 
-    span {
+    .price__photographe {
         font-size: 0.7rem;
     }
     .tag-Photographe{
@@ -121,13 +119,109 @@ nav ul {
     }
 
     /* page profil */
+
+    .header-information__photographe {
+        background-color: #f2f2f2;
+        margin: 20px 65px 0 65px;
+        
+        /* height: 170%; */
+    }
+
     .name-photographe-profile {
         color: #D3573C;
         font-weight: 400;
         font-size: 3em;
         position: absolute;
-        left: 10%;
-      
-
+        left: 10%;      
     }
-/* }  */
+    .btn-contactez {
+        font-size: .1rem;
+        padding: 10px;
+        background-color: #901C1C;
+        color: #ffffff;      
+        border: 1px #901C1C solid;
+        font-size: 0.8em;
+        position: absolute;
+        left: 300px;
+        top: 150px;
+        
+        /* .tag-photo__photographe  {
+        list-style-type: none;
+        } */
+    }
+    /* .tag-photo__type { a llenar con los tags
+        text-
+  ; */
+
+    .tri-etiquette {
+        font-size: 1rem;
+        /* padding-right: 20px; */
+        margin: 0px 65px 0 ;
+        background-color: green;
+       
+    }
+    
+    /* .btn-tri {
+        font-size: 0.9rem;
+        padding: 1px 5px;
+        background-color: #901C1C;
+        color: #ffffff;
+        border: 1px #901C1C solid;
+        font-size: 0.8em;
+        margin-top: 25px;
+    } */
+/* 
+    .nav-popular {
+        margin-left: 30px;
+    }
+    li {
+        list-style:none !important;
+        color:#FFF;
+        padding:10px;
+        font-size:20px;
+        text-decoration:none;
+        
+        }
+        .sous {
+            width: 15%;
+        }
+        nav ul {
+        background-color:#901C1C;
+        padding:0;
+        margin: 0 0 15px 15px;
+        width: 8%;
+        }
+        nav ul li {
+        list-style: none;
+        line-height:44px;
+        float: left;
+        background-color:#901C1C;
+        }
+        nav ul li a {
+        color:#FFF;
+        padding:10px;
+        font-size:20px;
+        text-decoration:none;
+        
+        }
+        li a:hover {
+        border-bottom:2px #FFF solid;
+        }
+        nav ul li ul { display:none; } /* Rend le menu déroulant caché par défaut */
+        /* nav ul li:hover ul { Affiche la dropNav au survol de la souris avec la class .drop
+        z-index:99999;
+        display:list-item !important;
+        position:absolute;
+        margin-top:5px;
+        margin-left:1px;
+        width: 10.5%;
+        } */
+        
+   /* 
+  .heart-like {
+    background-color: aqua;
+    position: absolute;
+    left: 8.33%;             
+    top: 12.5%;
+    } */
+    } 
