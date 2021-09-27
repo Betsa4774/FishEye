@@ -1,4 +1,4 @@
- @media all and (min-width: 767px){
+  @media screen and (max-width: 500px){ */
 
     * {
         margin: 0;
@@ -7,20 +7,9 @@
        }
        
      body {
-         background-color: #ffffff;
+         background-color: #FFFFFF;
       }
-   
-     .wrapper {      
-         background-color: #E67D5c;
-         position: absolute;
-         left: 400px;       
-         top: 10px;
-           /* display: flex;
-           justify-content: center;
-           color: 000000;  
-           padding-bottom: 15px;  */
-           /* background-image: url();  */              
-      }
+      
    
       .header {        
            display: flex;
@@ -29,22 +18,35 @@
            margin-top: 35px;     
        }
        #logo-banner {       
-           margin: 20px 0px 0px 40px;      
-           /* color: #901C1C; si besoin */
+           margin: 10px 0px 0px 10px; 
+           /* background-color: #000000; */
+           /* width: 50%; */
+           
+               
        }
+       /* svg {
+           width: 130;
+       } */
        .header-nav {               
-        width: 100%;
-        padding-top: 10px  ;
-        margin: 25px 50px 0px 10px; 
-        font-size: 1em;    
-   
+            width: 100%;
+            /* position: absolute;
+            top: 20%; */
+            padding-top: 10px;
+            /* margin: 25px 50px 0px 10px;  */
+
+            font-size: 0.7em;     
        }
+       /* .deroulant1{
+           background-color: #D3573C;
+          
+       } */
    
        nav a{
         text-decoration: none;  
         color: #901C1C;  
         /* padding-right: 7px;
         margin-left: 5px; */
+        
         
        }     
    
@@ -56,22 +58,113 @@
        list-style-type: none;
        display: flex;
        flex-direction: row;
-       justify-content: center;
-     
-       /* flex-wrap: nowrap; */
+       justify-content: center;           
        }
        
        a.tag {
-          padding-left: 10px;
+         padding-left: 10px;        
        }
+       /* .tag {
+           background-color: rebeccapurple;
+           display: flex;
+       } */
    
        .title {
         color: #901C1C;
         font-weight: 400;
-        font-size: 2rem;
+        font-size: 1rem;
         position: absolute;
-        right: 3%;
-        top: 8%;
-        /* margin-right: 20px; */
+        right:4%;
+        top: 12%;
+       
     }   
- }
+    figcaption {
+        /* background-color: #b46767; */
+        display: flex;
+        flex-direction: column;
+        /* align-content: center; */
+        text-align: center;
+        margin: 50px;
+    }
+
+    .photos-photographe1 {
+      display: flex;
+      flex-direction: column;
+
+    }
+    .photos-photographe2 {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .photo-presentation {
+        border-radius: 50%;
+    }
+    .name__photographe { 
+     color: #D3573C;   
+     font-weight: 400;
+     font-size: 2rem;
+    
+
+    }
+    .name__photographe-country {
+        color: #901C1C; 
+        font-size: 1rem;
+    }
+    .tagline__photographe {
+        font-size: 0.8rem;
+        color: #000000;
+        padding: 3px;
+    }
+
+    .price__photographe {
+        font-size: 0.7rem;
+    }
+    .tag__photographe{
+        color: #901C1C;
+        font-size: 1rem;
+    }
+
+    /* page profil */
+
+    .header-information__photographe {
+        background-color: #f2f2f2;
+        margin: 20px 65px 0 65px;
+        
+        /* height: 170%; */
+    }
+
+    .name-photographe-profile {
+        color: #D3573C;
+        font-weight: 400;
+        font-size: 3em;
+        position: absolute;
+        left: 10%;      
+    }
+    .btn-contactez {
+        font-size: .1rem;
+        padding: 10px;
+        background-color: #901C1C;
+        color: #ffffff;      
+        border: 1px #901C1C solid;
+        font-size: 0.8em;
+        position: absolute;
+        left: 300px;
+        top: 150px;
+        
+        /* .tag-photo__photographe  {
+        list-style-type: none;
+        } */
+    }
+    /* .tag-photo__type { a llenar con los tags
+        text-
+  ; */
+
+    .tri-etiquette {
+        font-size: 1rem;
+        /* padding-right: 20px; */
+        margin: 0px 65px 0 ;
+        background-color: green;
+       
+    }
+  } 

@@ -1,41 +1,49 @@
 import data from "./data.js"
 console.log(data.photographers)
-for(let p of data.photographers) {
-    console.log(p.city)
+
+// info tous photographes
+
+function infoPhotographes () {   
+   for(let p of data.photographers) {
+    console.log(p);
+     
+      const str =
+      `<article class="photos-photographe">
+      <form action="/photographe.html" id=${p.id} >
+      <input type="hidden" name="id" value=${p.id} >
+         <figure class="photo" >
+         
+            <img class="photo-presentation" src="portraits/${p.portrait}" alt=""> 
+            <Figcaption class="photo__legend" >            
+               <h2 id="name" class="name">${p.name}</h2>     
+               <h3 id="city" class="city">${p.city},${p.country}</h3>                                      
+               <p id="tagLine" class="tagLine">${p.tagline}</p>
+               <p id="price" class="price">${p.price}€/jour</p>
+               <div id="tag" class="tag__photographe">${p.tags} </div>                           
+            </figcaption>
+         </figure> 
+         </form>
+      </article>`;
+      document.querySelector(".photographes").innerHTML += str          
+   }   
 }
-    
- const nameMK = document.getElementById("name__photographeMK"); 
- const countryMK = document.getElementById("name__photographe-countryMK");
- const tagLineMK = document.getElementById("tagLine__photographe-MK");
- const priceMK = document.getElementById("price__photographeMK");
+infoPhotographes ();
 
- const nameERW = document.getElementById("name__photographeERW"); 
- const countryERW = document.getElementById("name__photographe-countryERW");
-
- const nameTG = document.getElementById("name__photographeTG"); 
- const countryTG = document.getElementById("name__photographe-countryTG");
- const nameNB = document.getElementById("name__photographeNB"); 
- const countryNB = document.getElementById("name__photographe-countryNB");
- const nameRD= document.getElementById("name__photographeRD"); 
- const countryRD = document.getElementById("name__photographe-countryRD");
- const nameMN = document.getElementById("name__photographeMN"); 
- const countryMN = document.getElementById("name__photographe-countryMN");
+const articles = document.querySelectorAll(".photos-photographe")
+console.log(articles);
+for (let article of articles){
+   article.firstElementChild.addEventListener("click", function(e){
+      article.firstElementChild.submit()
+   });
+}
 
 
 
- function namePhotographes () {
-    for(let p of data.photographers) {
-       if (p.id == 243) { nameMK.innerHTML= p.name;countryMK.innerHTML= p.city + "," + p.country;tagLineMK.innerHTML= p.tagline;priceMK.innerHTML=p.price + "/jour";}
-        if (p.id == 930) { nameERW.innerHTML= p.name;countryERW.innerHTML= p.city + "," + p.country;}
-         if (p.id == 82) { nameTG.innerHTML= p.name;countryTG.innerHTML= p.city + "," + p.country;}
-          if (p.id == 527) { nameNB.innerHTML= p.name;countryNB.innerHTML= p.city + "," + p.country;}
-          if (p.id == 925) { nameRD.innerHTML= p.name;countryRD.innerHTML= p.city + "," + p.country;}
-          if (p.id == 195) { nameMN.innerHTML= p.name;countryMN.innerHTML= p.city + "," + p.country;}
-    }
-    //  data.photographers.id(243)
-    //  console.log(name)
- }
 
- namePhotographes ();
+// href=`${ma_variable}`
 
-//  console.log(p.name); 
+
+
+
+
+
