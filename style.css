@@ -2,12 +2,13 @@
  * {
      margin: 0;
      padding: 0;
-     box-sizing: border-box;
-     font-family: DM sans;
+     box-sizing: border-box;    
+     font-family: "DM Sans";
     }
     
   body {
-      background-color: #ffffff;
+      background-color: #E5E5E5;
+      width: 100%;
    }
 
    .header {        
@@ -16,22 +17,29 @@
         width: 75%;  
         margin-top: 35px;     
     }
-
+    /* svg {
+        margin-left: 30px;
+    } */
     #logo-banner {       
-        margin: 20px 0px 0px 70px;         
+        margin: 20px 0px 0px 50px;         
     }
+
     .header-nav {               
      width: 100%;
      padding-top: 10px  ;
-     margin: 25px 50px 0px 10px; 
-     font-size: 1em;   
+     margin: 25px 0px 0px 0px; 
+     /* font-size: 0.8em;        */
+     font-size: 12px;
     }   
 
     nav a{
      text-decoration: none;  
      color: #901C1C;    
-     border: 1px solid #e7e0e0;
-     border-radius: 18%; 
+     border: 0.5px solid #C4C4C4;
+     border-radius: 11px; 
+     margin-right: 5px;   
+     padding-right: 10px;  
+     font-weight: 500;      
     }     
 
     nav a:hover{
@@ -43,72 +51,83 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
+        text-align: center;
     }
     
     a.tag, a.tag1 {
-       padding-left: 10px;
+       padding-left: 10px;            
     }
  
    .title {
         color: #901C1C;
         font-weight: 400;
-        font-size: 2rem;
+        /* font-size: 2rem; */
+        font-size: 36px;
         position: absolute;
-        right: 3%;
-        top: 7%;
-        margin-right: 70px;       
+        right: 1%;
+        top: 8%;
+        margin-right: 50px;       
     }
+    /*Section part*/   
 
-   .photographes {     
-      /* background-color: rgb(185, 211, 134); */
+   .photographes {         
       display: flex;   
       flex-wrap: wrap;
-      justify-content: space-around;
-      padding-top: 30px;   
-      width: 85%;
-      margin-left: 50px;
+      justify-content: center;
+      text-align: center;     
+      padding-top: 50px;         
+      /* margin-left: 0px; */
+      gap: 16%;    
     }    
 
+    /* .photos__photographes {
+        width: 30%;
+    } */    
+      
+
+    .photo__presentation {        
+        width: 200px;
+        height:200px;
+        /* width:70%;
+        height: 22vh; */
+        border-radius: 50%;  
+        object-fit: cover;        
+    }
+    
     .photo__legend {       
         display: flex;
         flex-direction: column;    
         text-align: center;
-        margin: 50px;
-    }    
-
-    .photo-presentation {
-        /* width: 526px;
-        height: 358px; */
-        width: 50%;
-        height: 25vh;
-        border-radius: 50%;
-        margin-left: 40px;
-    }
-
-    .name { 
+        /* margin: 10px 0px 0px 20px; */
+        padding-bottom: 25px;
+    }       
+    
+    .name, .name__profile, .name__tags { 
      color: #D3573C;   
      font-weight: 400;
-     font-size: 2rem;
+     font-size: 2em;
     }
 
-    .country, .city {
+    .city, .city__profile, .city__tags  {
         color: #901C1C; 
-        font-size: 0.7rem;
-    }
-    .tagLine {
+        font-size: 0.7em; 
+    }     
+
+    .tagLine, .tagLine__profile, .tagLine__tags {
         font-size: 0.6rem;
         color: #000000;
         padding: 3px;
     }
 
-    .price {
-        font-size: 0.6rem;
+    .price, .price__profile, .price__tags{
+        font-size: 0.6em;
         color: #757575;
     }
     .tag__photographe{
         color: #901C1C;
-        font-size: 1rem;
-        
+        font-size: 12px;
+        border: 0.5px solid #C4C4C4;
+        border-radius: 11px; 
     }
 
     /* page profil */
@@ -118,12 +137,27 @@
         margin: 20px 65px 0 65px;      
     }
 
-    .name-photographe-profile {
+    /* .name-photographe-profile {
         color: #D3573C;
         font-weight: 400;
         font-size: 3em;
         position: absolute;
         left: 10%;      
+    } */
+
+    .img__profile {        
+        width: 10%;
+        height: 25vh;
+        border-radius: 50%;
+        margin-left: 40px; 
+        position: absolute;
+        right: 55px;
+       
+    }
+    .photo__legendProfile {
+        
+        
+        background-color: aqua;
     }
     .btn-contactez {
         font-size: .1rem;
@@ -182,4 +216,27 @@
     .select-hide {
         display: none;
     }
+
+    /*page tags*/
+
+
+    
+.tag__photographeTags{
+    color: #901C1C;
+    font-size: 1rem;
+    border: 0.5px solid #C4C4C4;
+    border-radius: 11px; 
+}
+
+.photo__tags {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.img__tags {        
+    width: 10%;
+    height: 25vh;
+    border-radius: 50%;
+    margin-left: 40px; 
+}
 }

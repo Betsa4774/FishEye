@@ -1,32 +1,29 @@
-//info individuel  
-
-function infoTags () {  
+//info individuel du photographe 
+import data from "./data.js"
+function displayInfoTags () {  
   //Creation de la variable
-   const urlParams = new URLSearchParams(window.location.search);
-   console.log(urlParams);
-   alert(URLSearchParams(window.location.search));
+   const urlParams = new URLSearchParams(window.location.search);   
    //Accès aux valeurs
-   let tagPhotographe = urlParams.get('tag');
-   console.log(tagPhotographe);
+   let tagPhotographe = urlParams.get('tag');   
    for(let p of data.photographers) {
     console.log(p.tags);
     console.log(tagPhotographe);
-    if (p.tags.has(tagPhotographe)) {          
+    if (p.tags.includes(tagPhotographe)) {          
          const str =
-         `<article class="photos-photographe">
-            <figure class="photo" >
-               <img class="photo-presentation" src="portraits/${p.portrait}" alt=""> 
-               <Figcaption class="photo__legend" >            
-                  <h2 id="name" class="name">${p.name}</h2>     
-                  <h3 id="city" class="city">${p.city},${p.country}</h3>                                      
-                  <p id="tagLine" class="tagLine">${p.tagline}</p>
-                  <p id="price" class="price">${p.price}€/jour</p>
-                  <div id="tag" class="tag__photographe">${p.tags} </div>                           
+         `<article class="photo__tags">
+            <figure class="photo__tags" >
+               <img class="img__tags" src="portraits/${p.portrait}" alt=""> 
+               <Figcaption class="photo__legendTags" >            
+                  <h2 id="name" class="name__tags">${p.name}</h2>     
+                  <h3 id="city" class="city__tags">${p.city},${p.country}</h3>                                      
+                  <p id="tagLine" class="tagLine__tags">${p.tagline}</p>
+                  <p id="price" class="price__tags">${p.price}€/jour</p>
+                  <div id="tag" class="tag__photographeTags">${p.tags} </div>                           
                </figcaption>
             </figure> 
          </article>`;
-         document.querySelector(".photographes").innerHTML += str 
+         document.querySelector(".photographe").innerHTML += str;                 
       }
    }   
 }
-infoTags ();
+displayInfoTags();
