@@ -7,34 +7,59 @@ function displayTags () {
    let tagPhotographe = urlParams.get('tag');   
    var i;
    for(let p of data.photographers) {
-    console.log(p.tags);
-    console.log(tagPhotographe);
+   
     const aTags =p.tags;
     if (p.tags.includes(tagPhotographe)) {          
          // const str =
          var str =
-         `<article class="photo__tags">
-            <figure class="photo__Tags" >
+         `<article class="photo__tags">        
+            <figure >
+            <a href="photographe.html?id=${p.id}">
                <img class="img__tags" src="information/Sample Photos/Photographers ID Photos/${p.portrait}" alt=""> 
+            </a>
                <Figcaption class="photo__legendTags" >            
-                  <h2 id="name" class="name__tags">${p.name}</h2>     
+                  <a href="photographe.html?id=${p.id}">
+                     <h2 id="name" class="name__tags">${p.name}</h2>   
+                  </a>    
                   <h3 id="city" class="city__tags">${p.city},${p.country}</h3>                                      
                   <p id="tagLine" class="tagLine__tags">${p.tagline}</p>
                   <p id="price" class="price__tags">${p.price}€/jour</p>`;
 
                   for (i = 0; i < aTags.length; i++) {
-                     str = str + `<li class="header-nav-tag">
+                     str = str + `<span class="header-nav-tag">
                       <a class="tag1" href="tags.html?tag=`+aTags[i].toString() +`">#`+aTags[i].toString() +`</a>
-                      </li>`; 
+                      </span>`; 
                     //    console.log(aTags[i]);
-                  } 
-  
+                  }   
                   str = str + `
                </figcaption>                 
-            </figure> 
+            </figure>           
          </article>`;
-         document.querySelector(".photographe").innerHTML += str;                 
+         document.querySelector(".photographe__tags").innerHTML += str;                 
       }
    }   
 }
 displayTags();
+//const articles = document.querySelectorAll(".photos-photographe");
+// const names = document.querySelectorAll(".name__tags");
+// const images = document.querySelectorAll(".img__tags")
+//console.log(articles);
+// const articles = document.querySelectorAll(".photos-photographe")
+// console.log(articles);
+// for (let article of articles){
+//    article.firstElementChild.addEventListener("click", function(e){
+//       article.firstElementChild.submit()
+//    });
+// }
+
+// for (let name of names){
+//    name.addEventListener("click", function(e){
+//       name.submit()
+//    });
+// }
+
+// for (let image of images){
+//    image.addEventListener("click", function(e){
+//       image.submit()
+//    });
+// }

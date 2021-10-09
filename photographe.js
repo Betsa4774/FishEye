@@ -6,21 +6,27 @@ function infoPhotographe () {
    
    //Accès aux valeurs
    let idPhotographe = urlParams.get('id'); 
+   var i;
    for(let p of data.photographers) {    
-    if (p.id == idPhotographe) {          
-         const str =
+       const aTags =p.tags;
+    if (p.id == idPhotographe) { 
+       var str =       
          `<article class="photo__profiles">
             <figure class="photo__presentationProfile" >
                <img class="img__profile" src="information/Sample Photos/Photographers ID Photos/${p.portrait}" alt=""> 
                <Figcaption class="photo__legendProfile" >            
                   <h2 id="name" class="name__profile">${p.name}</h2>     
                   <h3 id="city" class="city__profile">${p.city},${p.country}</h3>                                      
-                  <p id="tagLine" class="tagLine__profile">${p.tagline}</p>
-                  
-                  <div id="tag" class="tag__photographeProfile">${p.tags} </div>                           
-               </figcaption>
+                  <p id="tagLine" class="tagLine__profile">${p.tagline}</p>`;
+                  for (i = 0; i < aTags.length; i++) {
+                     str = str + `<span class="header-nav-tag">
+                      <a class="tag1" href="tags.html?tag=`+aTags[i].toString() +`">#`+aTags[i].toString() +`</a>
+                      </span>`;                  
+                     } 
+                     str = str + `</figcaption>
             </figure> 
-         </article>`;
+         </article>`;                      
+       
          document.querySelector(".photographe").innerHTML += str;                 
       }
    }   
@@ -30,19 +36,22 @@ infoPhotographe ();
 
 //photos et vidéo du photographe
 
- function displayMedia() {
-   const urlParams = new URLSearchParams(window.location.search);   
-   
-   //Accès aux valeurs
-   let idPhotographe = urlParams.get('id'); 
-   for(let p of data.media) {    
-      if (p.photographerId == idPhotographe) {    
-      }
-   }
+//  function displayMedia() {
+//    const urlParams = new URLSearchParams(window.location.search); 
+//    var str;  
+//    //Accès aux valeurs
+//    let idPhotographe = urlParams.get('id'); 
+//    for(let p of data.media) {    
+//       if (p.photographerId == idPhotographe) {  
+//          str = `<div></div>`;
+//          document.querySelector(".mediaTool").innerHTML += str;    
+//       }
+//    }
+  
 //    const videosPhotos = data.media(window.location.search);  
 //    console.log(videosPhotos)
- }
- displayMedia()
+//  }
+//  displayMedia()
 // let mediaId = photograperId;   
 //    for(let m of data.media) {
 //     console.log(m.media);
