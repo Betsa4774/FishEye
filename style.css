@@ -6,30 +6,26 @@
      font-family: "DM Sans";
     }
     
-  body {
-      /* background-color: #E5E5E5; */
-      width: 100%;
+  body {     
+        width: 100%;
    }
 
    .header {        
         display: flex;
         flex-direction: row;
         width: 75%;  
-        margin-top: 35px;     
+        margin-top: 18px;     
     }
     
     #logo-banner {       
-        margin: 20px 0px 0px 50px;         
+        margin: 15px 0px 0px 50px;         
     }
-
     .header-nav {               
      width: 100%;
      padding-top: 10px  ;
-     margin: 25px 0px 0px 0px; 
-     /* font-size: 0.8em;        */
+     margin: 22px 0px 0px 0px; 
      font-size: 12px;
     }   
-
     nav a{
      text-decoration: none;  
      color: #901C1C;    
@@ -38,7 +34,6 @@
      margin-right: 5px;   
      padding-right: 10px;  
      font-weight: 500;   
-        
     }     
 
     nav a:hover{
@@ -52,35 +47,17 @@
         justify-content: center;
         text-align: center;
     }
-    
+       
     a.tag, a.tag1 {
-        padding-left: 10px;  
-        text-decoration: none;  
-        color: #901C1C;    
-        border: 0.5px solid #C4C4C4;
-        border-radius: 11px; 
-        margin-right: 5px;   
-        padding-right: 10px;  
-        font-weight: 500;   
-        font-size: 12px;   
-        /* display: flex;
-        flex-direction: row;
-        justify-content: center; */
-            
-     }
-   /* li.header-nav-tag {
-        display: flex;
-        flex-direction: row;
-    } */
- 
+        padding-left: 10px; 
+    } 
    .title {
         color: #901C1C;
         font-weight: 400;
-        /* font-size: 2rem; */
         font-size: 36px;
         position: absolute;
         right: 1%;
-        top: 8%;
+        top: 5%;
         margin-right: 50px;       
     }
     /*Section-accueil info photograhes*/   
@@ -95,7 +72,8 @@
     }    
     .photos-photographe {
        width: 22%;  
-       object-fit: contain;     
+       object-fit: contain;
+       margin-bottom: 30px;     
     }
     .photo__presentation {        
         width: 200px;
@@ -105,26 +83,22 @@
         cursor: pointer;    
     }
     
-    .photo__legend {       
+    /* .photo__legend {       
         display: flex;
         flex-direction: column;    
         text-align: center;
-        /* margin: 10px 0px 0px 20px; */
         padding-bottom: 25px;
-    }       
-    
+    }     */
     .name { 
      color: #D3573C;   
      font-weight: 400;
      font-size: 2em;
      cursor: pointer;
     }
-
-    .city {
+   .city {
         color: #901C1C; 
         font-size: 0.7em; 
     }     
-
     .tagLine {
         font-size: 0.6rem;
         color: #000000;
@@ -134,33 +108,39 @@
         font-size: 0.6em;
         color: #757575;
     }
-    .tag__photographe{
-        color: #901C1C;
+
+   .tag__legend {
+        text-decoration: none;  
+        color: #901C1C;    
+        border: 0.5px solid #C4C4C4;
+        border-radius: 11px; 
+        margin-right: 5px;   
+        padding: 0px 5px 0px 5px;        
+        font-weight: 500;   
+        font-size: 12px;   
+        text-align: center;
+   }
+
+    /* .tag__photographes{
+       color: #901C1C;
         font-size: 12px;
         border: 0.5px solid #C4C4C4;
         border-radius: 11px; 
-        /* gap: 5%; */
-
-    }
+        background-color: rebeccapurple;
+    } */
 
     /* page profil */
-
     .header-information__photographe {
-        /* background-color: #f2f2f2; */
-        margin: 20px 65px 0 65px;  background-color: #D3573C;    
-    }
-    
+       margin: 20px 65px 0 65px;  
+    }   
    
     .img__profile {  
         width: 200px;
         height: 200px;        
         border-radius: 50%;  
         object-fit: cover;          
-        /* margin-left: 40px;  */
         position: absolute;
-         right: 100px; 
-        /* left: 50px; */
-       
+        right: 100px; 
     }
     .photo__legendProfile {
         margin-bottom: 50px;       
@@ -179,15 +159,10 @@
         color: #000000;
         margin-bottom: 7px 0px 0px 5px;
     }
-    /* .price__profile {
-
-    } */
     .btn-contactez {
         height: 70px;
         width: 170px;
         border-radius: 5px;
-        /* font-size: .1rem; */
-        /* padding: 10px; */
         background-color: #901C1C;
         color: #ffffff;      
         border: 1px #901C1C solid;
@@ -197,16 +172,14 @@
         left: 600px;
         top: 140px; 
         cursor: pointer
-    }   
-
+    }  
     .label-tri {
         font-size: 18px;   
         font-weight: 700; 
         margin: 0px 65px 0 ;           
     }
     
-    /* menu deroulant tri*/
-    /*on masque le menu*/
+    /* menu deroulant tri, on masque le menu*/
     .custom-select {
         color: #ffffff;
         font-size: 18px;
@@ -230,9 +203,7 @@
         right: 5px;
         border: 6px solid;
         border-color: #ffffff transparent transparent; 
-        /* height: 0%;*/
     }
-
     .new-select.active::after{
         border-color:  transparent transparent #ffffff;
         top: 7px;
@@ -249,25 +220,9 @@
     .select-hide {
         display: none;
     }
-
-    /*page tags*/
-    /* .photographe {
-        width: 100%;
-    } */
-    /* .photographe {    
-       display: flex;   
-       justify-content: space-around;
-    } */
     .photo__tags {
-        background-color: aqua;
-         /* display: flex;    
-         flex-direction: row; 
-        justify-content: center; */
-        /* justify-content: space-around; */
-        margin-top: 50px;
-        text-align: center;
-        
-
+      margin-top: 50px;
+      text-align: center;
     }
     .tag__photographeTags{
         color: #901C1C;
@@ -279,9 +234,7 @@
     .img__tags {        
         width: 200px;
         height: 200px;    
-        border-radius: 50%;
-        /* margin-right: 25px;
-        margin-bottom: 25px; */
+        border-radius: 50%;       
         margin-left: 5px;
         object-fit: cover;
     }
@@ -291,7 +244,9 @@
     font-size: 2em;
     cursor: pointer;
     }
-
+    a {
+        text-decoration: none;
+    }
     .city__tags  {
         color: #901C1C; 
         font-size: 0.7em; 
@@ -314,8 +269,7 @@
         border-radius: 11px; 
        }
 
-       .photographe__tags {
-       background-color: red;
+       .photographe__tags {      
        display: flex;   
        flex-wrap: wrap;
        justify-content: center;

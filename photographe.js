@@ -20,10 +20,11 @@ function infoPhotographe () {
                   <p id="tagLine" class="tagLine__profile">${p.tagline}</p>`;
                   for (i = 0; i < aTags.length; i++) {
                      str = str + `<span class="header-nav-tag">
-                      <a class="tag1" href="tags.html?tag=`+aTags[i].toString() +`">#`+aTags[i].toString() +`</a>
+                      <a class="tag__legend" href="tags.html?tag=`+aTags[i].toString() +`">#`+aTags[i].toString() +`</a>
                       </span>`;                  
                      } 
-                     str = str + `</figcaption>
+                     str = str + `
+               </figcaption>
             </figure> 
          </article>`;                      
        
@@ -32,7 +33,6 @@ function infoPhotographe () {
    }   
 }
 infoPhotographe ();
-//<p id="price" class="price__profile">${p.price}€/jour</p> no esta
 
 //photos et vidéo du photographe
 

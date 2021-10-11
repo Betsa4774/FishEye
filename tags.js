@@ -27,7 +27,7 @@ function displayTags () {
 
                   for (i = 0; i < aTags.length; i++) {
                      str = str + `<span class="header-nav-tag">
-                      <a class="tag1" href="tags.html?tag=`+aTags[i].toString() +`">#`+aTags[i].toString() +`</a>
+                      <a class="tag__legend" href="tags.html?tag=`+aTags[i].toString() +`">#`+aTags[i].toString() +`</a>
                       </span>`; 
                     //    console.log(aTags[i]);
                   }   
