@@ -20,37 +20,38 @@
     #logo-banner {       
         margin: 15px 0px 0px 50px;         
     }
-    .header-nav {               
+    .header-nav {          
      width: 100%;
      padding-top: 10px  ;
      margin: 22px 0px 0px 0px; 
      font-size: 12px;
+    
     }   
-    nav a{
-     text-decoration: none;  
-     color: #901C1C;    
-     border: 0.5px solid #C4C4C4;
-     border-radius: 11px; 
-     margin-right: 5px;   
-     padding-right: 10px;  
-     font-weight: 500;   
-    }     
-
-    nav a:hover{
-    color: #D3573C; 
-    }
+    .header-nav-tag {
+        color:#901C1C;
+        background-color: #FFFFFF;
+        border: 0.5px solid #C4C4C4;
+        border-radius: 11px; 
+        margin-right: 5px;   
+        padding: 0px 10px 0px 10px;  
+        font-weight: 500;   
+        text-align: center;
+    }  
 
     nav ul {
         list-style-type: none;
         display: flex;
         flex-direction: row;
         justify-content: center;
-        text-align: center;
+        text-align: center; 
+        cursor: pointer;             
     }
-       
-    a.tag, a.tag1 {
-        padding-left: 10px; 
-    } 
+
+    nav ul :hover { /*si se junta es la barra y no los tags falta el focus*/
+        color:#ffffff;
+       background-color: #901C1C;            
+    }      
+    
    .title {
         color: #901C1C;
         font-weight: 400;
@@ -110,7 +111,7 @@
     }
 
    .tag__legend {
-        text-decoration: none;  
+        /* text-decoration: none;   */
         color: #901C1C;    
         border: 0.5px solid #C4C4C4;
         border-radius: 11px; 
@@ -118,17 +119,19 @@
         padding: 0px 5px 0px 5px;        
         font-weight: 500;   
         font-size: 12px;   
-        text-align: center;
+        text-align: center;   
    }
 
-    /* .tag__photographes{
+    .tag__photographes {
        color: #901C1C;
         font-size: 12px;
         border: 0.5px solid #C4C4C4;
-        border-radius: 11px; 
-        background-color: rebeccapurple;
-    } */
-
+        border-radius: 11px;  
+        padding: 0px 5px 0px 5px; 
+        font-weight: 500;     
+        margin-right: 3px;            
+    }
+    
     /* page profil */
     .header-information__photographe {
        margin: 20px 65px 0 65px;  
@@ -162,7 +165,6 @@
     .btn-contactez {
         height: 70px;
         width: 170px;
-        border-radius: 5px;
         background-color: #901C1C;
         color: #ffffff;      
         border: 1px #901C1C solid;
@@ -173,6 +175,10 @@
         top: 140px; 
         cursor: pointer
     }  
+     .btn-contactez:hover:focus {
+        background-color: #D3573C;
+        color: #000000;
+    }
     .label-tri {
         font-size: 18px;   
         font-weight: 700; 
@@ -224,14 +230,17 @@
       margin-top: 50px;
       text-align: center;
     }
-    .tag__photographeTags{
+    .tags__profile{
         color: #901C1C;
-        font-size: 1rem;
+        font-size: 12px;
         border: 0.5px solid #C4C4C4;
-        border-radius: 11px; 
+        border-radius: 11px;  
+        padding: 0px 5px 0px 5px; 
+        font-weight: 500;     
+        margin-right: 3px;             
     }
   
-    .img__tags {        
+    /* .img__tags {        
         width: 200px;
         height: 200px;    
         border-radius: 50%;       
@@ -261,20 +270,22 @@
     .price__tags{
         font-size: 0.6em;
         color: #757575;
-    }
-    .tag__photographe{
+    } */
+    /* .tag__photographe{
         color: #901C1C;
         font-size: 12px;
         border: 0.5px solid #C4C4C4;
         border-radius: 11px; 
-       }
+        background-color: aqua;
+       } */
 
-       .photographe__tags {      
+       /* .photographe__tags {      
        display: flex;   
        flex-wrap: wrap;
        justify-content: center;
        text-align: center;     
        padding-top: 50px;   
        gap: 16%;    
-    } 
+       background-color: aqua;
+    }  */
     }

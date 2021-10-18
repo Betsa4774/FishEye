@@ -18,9 +18,10 @@ function infoPhotographe () {
                   <h2 id="name" class="name__profile">${p.name}</h2>     
                   <h3 id="city" class="city__profile">${p.city},${p.country}</h3>                                      
                   <p id="tagLine" class="tagLine__profile">${p.tagline}</p>`;
+
                   for (i = 0; i < aTags.length; i++) {
-                     str = str + `<span class="header-nav-tag">
-                      <a class="tag__legend" href="tags.html?tag=`+aTags[i].toString() +`">#`+aTags[i].toString() +`</a>
+                     str = str + `<span class="tags__profile">
+                      #${aTags[i].toString()}
                       </span>`;                  
                      } 
                      str = str + `

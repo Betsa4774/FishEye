@@ -28,18 +28,14 @@
         padding-top: 10px;     
         font-size: 0.7em;    
         display: flex;
-        /* flex-direction: row; */
         flex-wrap: wrap;
         justify-content: center;  
-        /* justify-content: space-between;    */
-    }
-         
+    }         
     nav a {
     text-decoration: none;  
     color: #901C1C;   
-                  
-    }     
-
+    
+    }    
     nav a:hover{
     color: #D3573C; 
     border: 0.5px solid #C4C4C4;
@@ -53,27 +49,18 @@
     width: 50%;
     list-style-type: none;
     display: flex;
-    /* flex-direction: row; */
     flex-wrap: wrap;
     justify-content: center;   
-     /* justify-content: space-between;  */
+    
     padding: 0px;       
 
     }
     
     a.tag {
-        padding-left: 10px;     
-        /* display: flex;
-    flex-direction: row;
-    justify-content: center;        */
-    /* margin-right: 25px; */
+    padding-left: 10px;     
     }
     a.tag1 {
         padding-left: 10px; 
-        /* display: flex;
-    flex-direction: row;
-    justify-content: center;     */
-    /* margin-right: 25px; */
     }
     
     .title {
@@ -88,15 +75,10 @@
         line-height: 18px;
     }   
     .photographes { /*6 photographes*/        
-        /* display: flex;   
-        flex-wrap: wrap;
-        justify-content: center; */
         display: flex;
         flex-direction: column;
         text-align: center;     
-        /* padding-top: 50px;   
-        gap: 16%;     */
-   }    
+    }    
     .photos-photographe {
         /* width: 100%;  */
         object-fit: contain;
@@ -113,7 +95,6 @@
         display: flex;
         flex-direction: column;    
         text-align: center;
-        /* margin: 10px 0px 0px 20px; */
         padding-bottom: 25px;
     }       
     
@@ -121,10 +102,7 @@
      color: #D3573C;   
      font-weight: 400;
      font-size: 2em;
-     /* cursor: pointer; */
-     /* line-height: 0%; */
      margin-top: 10px;
-     /* margin-bottom: 5px; */
     }
     
 
@@ -152,10 +130,9 @@
         border: 0.5px solid #C4C4C4;
         border-radius: 11px; 
     }
-    /* page profil */
 
+    /* page profil */
     .header-information__photographe {
-        /* background-color: #f2f2f2; */
         margin: 20px 65px 0 65px;  background-color: aqua;    
     }
    
@@ -164,11 +141,6 @@
         height: 200px;        
         border-radius: 50%;  
         object-fit: cover;          
-        /* margin-left: 40px;  */
-        /* position: absolute;
-         right: 100px;  */
-        /* left: 50px; */
-       
     }
     .photo__legendProfile {
         margin-bottom: 50px;       
@@ -187,15 +159,10 @@
         color: #000000;
         margin-bottom: 7px 0px 0px 5px;
     }
-    /* .price__profile {
-
-    } */
     .btn-contactez {
         height: 70px;
         width: 170px;
-        border-radius: 5px;
-        /* font-size: .1rem; */
-        /* padding: 10px; */
+        border-radius: 5px;      
         background-color: #901C1C;
         color: #ffffff;      
         border: 1px #901C1C solid;
@@ -227,8 +194,7 @@
         background-color:#901C1C;
         width: 15%;
         position: relative;
-        left: 150px;
-        /* top: 15px; */
+        left: 150px;       
         padding: 7px;
     }
     .new-select::after{
@@ -238,7 +204,6 @@
         right: 5px;
         border: 6px solid;
         border-color: #ffffff transparent transparent; 
-        /* height: 0%;*/
     }
 
     .new-select.active::after{
@@ -260,18 +225,11 @@
 
     /*page tags*/
    
-    /* .photographe {    
-       display: flex;   
-       justify-content: space-around;
-    } */
-    .photo__tags {
+   .photo__tags {
         background-color: aqua;
-        /* display: flex;     */
         justify-content: center;
-        /* justify-content: space-around; */
         margin-top: 50px;
         text-align: center;
-
     }
     .tag__photographeTags{
         color: #901C1C;
@@ -284,8 +242,6 @@
         width: 200px;
         height: 200px;    
         border-radius: 50%;
-        /* margin-right: 25px;
-        margin-bottom: 25px; */
         margin-left: 5px;
     }
     .name__tags { 
