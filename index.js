@@ -48,26 +48,69 @@ function displayPhotographes(photographers) {
          </figcaption>                 
       </article>`;
       document.querySelector(".photographes").innerHTML += str          
-   }
-  
+   }  
 }
 displayPhotographes(infoPhotographes);
+//yo
 
+//eventlistener -filterPhotographes est la fonction
+// const filterNavTags = document.querySelectorAll(".header-nav-tag");
+// function filterPhotographes(){
+//  // alert('funciona'); 
+// // console.log(funciona)
+// }
 
-// function filterPhotographes(photographers, filtre) {
+// for (let filterNavTag of filterNavTags){
+//    filterNavTag.firstElementChild.addEventListener("click",
+//     filterPhotographes(filterNavTag.firstElementChild.textContent));
 
-// const filteredPhotographers = photographers.filter(p =>{
+// }
+
+//christian
+// const filterNavTags = document.querySelectorAll(".header-nav-tag")
+// for (let filterNavTag of filterNavTags){
+//    filterNavTag.addEventListener("click",
+//     filterPhotographes(filterNavTag.firstElementChild.textContent));
+// }
+
+// const filterTagPhotographers = document.querySelectorAll(".tag__photographes") //event para los clicks delas fotos
+// for (let filterTagPhotographer of filterTagPhotographers){
+//    filterTagPhotographer.addEventListener("click",
+//       filterPhotographes(filterTagPhotographer.textContent));
+// }
+
+//function appel l'event-christian
+// function filterPhotographes(sTag){
+//    let oPhotographesFiltered = {};
+//    for(let p of infoPhotographes) { 
+//       const aTags = p.tags;
+      
+//       let IsFiltered = aTags.filter(sTagFiltered => {
+//          return  p.tags.includes(sTagFiltered)
+//       });
+
+//       console.log(IsFiltered);
+//       console.log(sTag);
+
+//       // if (IsFiltered == )
+//       //  oPhotographesFiltered.add(p);
+//   }
+// }
+// 
+// function filterPhotographes(atags, filtre) {
+
+// const filteredPhotographers = atags.filter(p =>{
 //   return  p.tags.includes(filtre)    
 // })
 // return filteredPhotographers
 // }
 
-// filterPhotographes((photographers, filtre))
+// filterPhotographes((atags, filtre))
 
 // document.querySelectorAll(".tag__photographes").forEach(tag => {
 //    tag.addEventListener("click", function(e){
 
-//       const filterPhotographes = filterPhotographes(ps, e.target.nodeValue)
+//       const filterPhotographes = filterPhotographes(atags, e.target.nodeValue)
 //       displayIinfoPhotographes(filterPhotographes)
 //       })
 // })
